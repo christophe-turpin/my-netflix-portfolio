@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+}
+
+.app {
+  background-color: #111;
+  overflow: hidden;
+  color: white;
+  margin: 0;
+  z-index: 300;
+}
+
+.frame > img {
+  width: 100%;
+  height: auto;
+  align-content: center;
+
+}
