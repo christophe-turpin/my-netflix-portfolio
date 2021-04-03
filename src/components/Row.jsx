@@ -41,8 +41,7 @@ const Poster = styled.div`
   height: 100px;
   margin-right: 10px;
   transition: transform 450ms;
-  h6,
-  p {
+  span {
     display: none;
   }
   h3 {
@@ -55,14 +54,17 @@ const Poster = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    h6,
-    p {
+    span {
       display: flex;
-      flex-flow: row wrap;
-      font-size: 0.7rem;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      height: 100%;
       background-color: #111;
       opacity: 0.6;
       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    p {
+      font-size: 0.75rem;
     }
     h6 {
       font-weight: bold;
@@ -77,7 +79,6 @@ const FrameDiv = styled.div`
   flex-flow: column nowrap;
   align-items: center;
 `;
-// const RowDiv = styled.div``;
 
 function Row({ title, resumeData }) {
   const [frameObject, setFrameObject] = useState(null);
@@ -99,10 +100,12 @@ function Row({ title, resumeData }) {
               hover={element.hover}
             >
               {element?.place && <h3>{element?.place}</h3>}
-              {element?.title && <h6>{element?.title}</h6>}
-              {element?.description && <p>{element?.description}</p>}
-              {element?.period && <p>{element?.period}</p>}
-              {element?.Achievements && <p>{element?.Achievements}</p>}
+              <span>
+                {element?.title && <h6>{element?.title}</h6>}
+                {element?.description && <p>{element?.description}</p>}
+                {element?.period && <p>{element?.period}</p>}
+                {element?.Achievements && <p>{element?.Achievements}</p>}
+              </span>
             </Poster>
           ))}
         </RowPosters>
