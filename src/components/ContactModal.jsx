@@ -89,6 +89,7 @@ function ContactModal(props) {
     );
     resetForm();
     alert("Votre message a bien été envoyé");
+    handleClose();
   }
   function resetForm() {
     setMessage({
@@ -163,7 +164,12 @@ function ContactModal(props) {
                     setMessage({ ...message, message: e.target.value })
                   }
                 />
-                <Button type="submit">Envoyer</Button>
+                <Button
+                  type="submit"
+                  disabled={!message.email || !message.message || !message.name}
+                >
+                  Envoyer
+                </Button>
               </form>
             </ContactForm>
           )}
