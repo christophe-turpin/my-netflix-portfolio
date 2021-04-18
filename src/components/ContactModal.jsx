@@ -7,6 +7,7 @@ const CModal = styled(Modal)`
   display: flex;
   align-items: center;
   justify-content: center;
+  max-height: 75vh;
   align-self: center;
   margin: auto;
   a {
