@@ -171,6 +171,7 @@ function ContactModal(props) {
                 >
                   Envoyer
                 </Button>
+                <Button onClick={() => handleClose()}>Annuler</Button>
               </form>
             </ContactForm>
           )}
