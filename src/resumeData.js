@@ -50,10 +50,9 @@ let resumeData = {
       className: "fa fa-github",
     },
     {
-      name: "Malt",
       url: "https://www.malt.fr/profile/christopheturpin",
       image:
-        "https://news.malt.com/wp-content/uploads/2018/03/malt_picto_white_bg_png.png",
+        "https://res.cloudinary.com/hopwork/image/upload/rebranding2020/malt-logo/malt-red.svg",
     },
   ],
   aboutme:

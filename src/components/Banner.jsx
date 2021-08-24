@@ -45,6 +45,8 @@ const BannerButtons = styled.header`
     font-weight: 600;
     text-transform: none;
     background-color: black;
+    width: 8vw;
+    height: 5vh;
     opacity: 0.6;
     margin-right: 20px;
     cursor: pointer;
@@ -54,7 +56,11 @@ const BannerButtons = styled.header`
     background-color: white;
     transition: all 0.2s;
   }
-  img,
+  img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+  }
   svg {
     width: 20px;
     margin-right: 10px;
@@ -97,7 +103,7 @@ function Banner() {
             >
               <Button>
                 {getIcon(socialLink)}
-                {socialLink.name}
+                {socialLink?.name}
               </Button>
             </a>
           ))}
