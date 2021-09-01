@@ -26,6 +26,7 @@ import WordPress from "./assets/WordPress.png";
 import chris from "./assets/chris.jpg";
 import CV_Christophe_TURPIN from "./assets/CV_Christophe_TURPIN.pdf";
 import recursif from "./assets/recursif.png";
+import malt from "./assets/malt.png";
 
 let resumeData = {
   imagebaseurl: background,
@@ -51,8 +52,7 @@ let resumeData = {
     },
     {
       url: "https://www.malt.fr/profile/christopheturpin",
-      image:
-        "https://res.cloudinary.com/hopwork/image/upload/rebranding2020/malt-logo/malt-red.svg",
+      image: malt,
     },
   ],
   aboutme:
